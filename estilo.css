@@ -1,0 +1,205 @@
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #b0a773;
+  padding: 10px;
+  color: #f2f2f2;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+
+section {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.contenedor-texto {
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.contenedor-texto h1,
+.contenedor-texto p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.cafeteria{
+  max-width: 100%;
+  height: auto;
+  border: solid #b0a773 20px;
+  display: block;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label, form input, form textarea {
+  margin-bottom: 10px;
+}
+
+form input, form textarea {
+  padding: 5px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #635d40;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #b0a773;
+}
+
+#menu {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menu li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#menu li img {
+  width: 330px;
+  height: auto;
+  margin-right: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#menu li img:hover {
+  transform: scale(1.1);
+  border: solid #b0a773 10px;
+}
+
+#nombre {
+  width: 300px;
+}
+
+#apellido {
+  width: 300px;
+}
+
+#email {
+  width: 300px;
+}
+
+#mensaje {
+  height: 150px;
+  width: 300px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+.contacto-footer {
+  background-color: #b0a773;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 5px;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .cafeteria {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    border: none;
+  }
+
+  form button {
+    padding: 8px 16px;
+  }
+
+  #menu li img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
